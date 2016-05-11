@@ -1,6 +1,5 @@
 ### usefull packages
 - language-cmake
-- language-doxygen
 - language-gitignore
 - language-markdown
 - language-cpp14
