@@ -11,8 +11,8 @@
 maybe also have a look at https://github.com/dixx/language-cpp-irrlicht
 
 ### cozy style
-- UI: One dark
-- Theme: Advanced Railscast
+- UI: One Dark
+- Theme: Advanced Railscasts
 - goes fine with custom `styles.less`
 
 ### config.cson additions
