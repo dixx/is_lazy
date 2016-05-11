@@ -1,2 +1,2 @@
-# is_lazy
-scripts and configs for my convenience
+# dixx is_lazy
+Storage for some automations and configs, to set up my programs and stuff fast and convenient.
