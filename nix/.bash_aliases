@@ -1,5 +1,6 @@
 alias e='$EDITOR'
-alias ll='ls -al'
+alias ll='ls -alF'
+alias la='ls -A'
 alias ...='cd ..'
 alias fucking='sudo'
 alias please='sudo'
