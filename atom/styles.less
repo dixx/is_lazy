@@ -1,0 +1,50 @@
+/* imports */
+@import (reference) "syntax-variables";
+
+/* stuff in the editor */
+atom-text-editor {
+  &.editor { background-color: black; }
+  @syntax-background-color: black;
+
+  &::shadow {
+    /* show invisible chars only in selection */
+    .invisible-character { color: @syntax-background-color; }
+
+    /* show a dotted line underneath folded lines */
+    .fold-marker {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        border-bottom: 1px dashed @syntax-invisible-character-color;
+      }
+    }
+    .line.cursor-line .fold-marker {
+      &::after { color: @syntax-text-color; }
+      &::before { border-color: @syntax-text-color; }
+    }
+
+    /* styles */
+    .cpp {
+      @custom-new-comment-color: dimgrey;
+      .documentation {
+        color: @custom-new-comment-color;
+        .keyword { color: lightslategrey; }
+      }
+      .comment { color: @custom-new-comment-color; }
+      .storage {
+        &.type { font-weight: bold; }
+        &.modifier { font-weight: bold; }
+      }
+      .entity {
+        &.type { color: #ffc66d; }
+      }
+      .preprocessor {
+        color: darkorchid;
+        .keyword { color: inherit; }
+      }
+    }
+  }
+}
