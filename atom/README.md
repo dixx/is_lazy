@@ -3,6 +3,7 @@
 - language-doxygen
 - language-gitignore
 - language-markdown
+- language-cpp14
 - minimap
 - minimap-cursorline
 - terminal-plus
