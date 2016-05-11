@@ -1,0 +1,6 @@
+alias e='$EDITOR'
+alias ll='ls -al'
+alias ...='cd ..'
+alias fucking='sudo'
+alias please='sudo'
+alias todo='e ~/todo.md'
