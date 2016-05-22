@@ -42,7 +42,13 @@ atom-text-editor {
         }
       }
       .entity {
-        &.type { color: #ffc66d; }
+        &.type {
+          color: #ffc66d;
+          &.irrlicht {
+            color: #446;
+            font-weight: bold;
+          }
+        }
       }
       .preprocessor {
         color: darkorchid;
