@@ -6,3 +6,4 @@ git config --global alias.a add -A
 git config --global alias.l log
 git config --global alias.s status
 git config --global alias.p pull
+git config --global alias.b branch -a
