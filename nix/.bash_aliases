@@ -6,3 +6,4 @@ alias fucking='sudo'
 alias please='sudo'
 alias todo='e ~/todo.md'
 alias webshare='python -m SimpleHTTPServer' # opens web server of current dir on port 8000
+alias gimme='ps ax|grep'
