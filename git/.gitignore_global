@@ -1,0 +1,5 @@
+# textmate CTAGS bundle files
+tmtags*
+
+# a per-project playground
+local/
