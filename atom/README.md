@@ -1,4 +1,5 @@
 ### usefull packages
+- symbol-gen
 - language-cmake
 - language-gitignore
 - language-markdown
