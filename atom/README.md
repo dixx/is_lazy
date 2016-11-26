@@ -7,6 +7,7 @@
 - minimap
 - minimap-cursorline
 - platformio-ide-terminal
+- local-settings
 
 maybe also have a look at https://github.com/dixx/language-cpp-irrlicht
 
