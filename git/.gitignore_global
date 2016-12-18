@@ -1,5 +1,14 @@
 # textmate CTAGS bundle files
 tmtags*
 
+# atom editor files
+.tags
+.tags_swap
+
+# eclipse project files
+.cproject
+.project
+.settings/
+
 # a per-project playground
 local/
