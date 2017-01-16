@@ -4,10 +4,14 @@
 - language-gitignore
 - language-markdown
 - language-cpp14
+- linter-rubocop
 - minimap
 - minimap-cursorline
 - platformio-ide-terminal
 - local-settings
+- todo-show
+- pigments
+- project-plus
 
 maybe also have a look at https://github.com/dixx/language-cpp-irrlicht
 
