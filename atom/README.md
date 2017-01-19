@@ -11,7 +11,10 @@
 - local-settings
 - todo-show
 - pigments
+- minimap-pigments
 - project-plus
+- activate-power-mode
+- context-git
 
 maybe also have a look at https://github.com/dixx/language-cpp-irrlicht
 
