@@ -1,27 +1,14 @@
-### usefull packages
-- symbol-gen
-- language-cmake
-- language-gitignore
-- language-markdown
-- language-cpp14
-- linter-rubocop
-- minimap
-- minimap-cursorline
-- platformio-ide-terminal
-- local-settings
-- todo-show
-- pigments
-- minimap-pigments
-- project-plus
-- activate-power-mode
-- context-git
+### packages
+To get a list of installed packages: `apm list --installed --bare > installed-package-list.txt`
+To install that list again: `apm install --packages-file installed-package-list.txt`
 
-maybe also have a look at https://github.com/dixx/language-cpp-irrlicht
+### possibly usefull packages
+- local-settings
+
+Maybe also have a look at https://github.com/dixx/language-cpp-irrlicht.
 
 ### cozy style
-- UI: One Dark
-- Theme: Advanced Railscasts
-- goes fine with custom `styles.less`
+UI: `One Dark`, syntax: `Railscast`. Goes fine with custom `styles.less`.
 
 ### config.cson additions
 ```
