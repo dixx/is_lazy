@@ -7,3 +7,5 @@ git config --global alias.l log
 git config --global alias.s status
 git config --global alias.p pull
 git config --global alias.b branch -a
+git config --global alias.d diff
+git config --global alias.f fetch
