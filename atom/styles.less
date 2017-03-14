@@ -3,12 +3,15 @@
 
 /* stuff in the editor */
 atom-text-editor {
-  &.editor { background-color: black; }
-  @syntax-background-color: black;
+  //&.editor { background-color: black; }
+  //@syntax-background-color: black;
 
-  &::shadow {
+  &.editor {
     /* show invisible chars only in selection */
-    .invisible-character { color: @syntax-background-color; }
+    .invisible-character {
+      color: @syntax-background-color;
+    }
+    .hard-tab { color: #f00; }
 
     /* show a dotted line underneath folded lines */
     .fold-marker {
@@ -27,20 +30,21 @@ atom-text-editor {
     }
 
     /* styles */
-    .cpp {
+    .syntax--cpp {
+      .hard-tab { color: @syntax-background-color; }
       @custom-new-comment-color: dimgrey;
-      .documentation {
+      .syntax--documentation {
         color: @custom-new-comment-color;
-        .keyword { color: lightslategrey; }
+        .syntax--keyword { color: lightslategrey; }
       }
-      .comment { color: @custom-new-comment-color; }
-      .storage {
-        &.modifier {
+      .syntax--comment { color: @custom-new-comment-color; }
+      .syntax--storage {
+        &.syntax--modifier {
           color: #cc7833;
         }
       }
-      .entity {
-        &.type {
+      .syntax--entity {
+        &.syntax--type {
           color: #ffc66d;
           &.irrlicht {
             color: #446;
@@ -48,9 +52,17 @@ atom-text-editor {
           }
         }
       }
-      .preprocessor {
+      .syntax--preprocessor {
         color: darkorchid;
-        .keyword { color: inherit; }
+        .syntax--keyword { color: inherit; }
+      }
+    }
+    .syntax--ruby {
+      .syntax--punctuation.syntax--definition.syntax--constant {
+        text-shadow: none;
+        .syntax--hashkey {
+          text-shadow: none;
+        }
       }
     }
   }
