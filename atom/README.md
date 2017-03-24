@@ -8,7 +8,7 @@ To install that list again: `apm install --packages-file installed-package-list.
 Maybe also have a look at https://github.com/dixx/language-cpp-irrlicht.
 
 ### cozy style
-UI: `One Dark`, syntax: `Railscast`. Goes fine with custom `styles.less`.
+UI: `one-dark-ui`, syntax: `advanced-railscasts-style`. Goes fine with custom `styles.less`.
 
 ### config.cson additions
 ```
