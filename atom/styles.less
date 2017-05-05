@@ -3,25 +3,19 @@
 
 /* stuff in the editor */
 atom-text-editor {
-  @syntax-background-color: black;
-
   &.editor {
-    background-color: @syntax-background-color;
-
-    /* show invisible chars only in selection */
-    .invisible-character { color: @syntax-background-color; }
-    .hard-tab { color: @syntax-background-color; }
+    .invisible-character { color: @syntax-background-color; } // show invisible chars only in selection
+    .hard-tab { color: #f00; }
+    .indent-guide { box-shadow: inset 1px 0 #707; } // normally indent is text color
 
     /* show a dotted line underneath folded lines */
-    .fold-marker {
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        border-bottom: 1px dashed @syntax-invisible-character-color;
-      }
+    .fold-marker::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      border-bottom: 1px dashed @syntax-invisible-character-color;
     }
     .line.cursor-line .fold-marker {
       &::after { color: @syntax-text-color; }
@@ -37,11 +31,7 @@ atom-text-editor {
         .syntax--keyword { color: lightslategrey; }
       }
       .syntax--comment { color: @custom-new-comment-color; }
-      .syntax--storage {
-        &.syntax--modifier {
-          color: #cc7833;
-        }
-      }
+      .syntax--storage.syntax--modifier { color: #cc7833; }
       .syntax--entity {
         &.syntax--type {
           color: #ffc66d;
@@ -59,9 +49,7 @@ atom-text-editor {
     .syntax--ruby {
       .syntax--punctuation.syntax--definition.syntax--constant {
         text-shadow: none;
-        .syntax--hashkey {
-          text-shadow: none;
-        }
+        .syntax--hashkey { text-shadow: none; }
       }
     }
   }
