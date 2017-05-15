@@ -3,6 +3,8 @@
 
 /* stuff in the editor */
 atom-text-editor {
+  @syntax-background-color: #212121;
+  background-color: @syntax-background-color;
   &.editor {
     .invisible-character { color: @syntax-background-color; } // show invisible chars only in selection
     .hard-tab { color: #f00; }
