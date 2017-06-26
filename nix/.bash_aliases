@@ -7,3 +7,5 @@ alias please='sudo'
 alias todo='e ~/todo.md'
 alias webshare='python -m SimpleHTTPServer' # opens web server of current dir on port 8000
 alias gimme='ps ax|grep'
+alias ff='find . -iname'
+alias ccat='pygmentize -g -O style=colorful,linenos=1'
