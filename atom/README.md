@@ -11,7 +11,7 @@ Maybe also have a look at https://github.com/dixx/language-cpp-irrlicht.
 UI: `one-dark-ui`, syntax: `advanced-railscasts-style`. Goes fine with custom `styles.less`.
 
 ### config.cson additions
-```
+```cson
 "*":
   core:
     audioBeep: false
