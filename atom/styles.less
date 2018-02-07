@@ -3,12 +3,12 @@
 
 /* stuff in the editor */
 atom-text-editor {
-  @syntax-background-color: #212121;
+  @syntax-background-color: black;
   background-color: @syntax-background-color;
   &.editor {
     .invisible-character { color: @syntax-background-color; } // show invisible chars only in selection
-    .hard-tab { color: #f00; }
-    .indent-guide { box-shadow: inset 1px 0 #707; } // normally indent is text color
+    .hard-tab { color: red; }
+    .indent-guide { box-shadow: inset 1px 0 purple; } // normally indent is text color
 
     /* show a dotted line underneath folded lines */
     .fold-marker::before {
@@ -25,28 +25,40 @@ atom-text-editor {
     }
 
     /* styles */
-    .syntax--cpp {
+    .syntax--cpp .syntax--c {
       .hard-tab { color: @syntax-background-color; }
       @custom-new-comment-color: dimgrey;
+      @custom-new-documentation-keyword-color: lightslategrey;
+      @custom-new-punctuation-color: lighten(@syntax-text-color, 20%);
       .syntax--documentation {
         color: @custom-new-comment-color;
-        .keyword { color: lightslategrey; }
+        .keyword { color: @custom-new-documentation-keyword-color; }
       }
       .syntax--comment { color: @custom-new-comment-color; }
       .syntax--storage.syntax--modifier { color: #cc7833; }
       .syntax--entity {
         &.syntax--type {
           color: #ffc66d;
-          &.syntax--irrlicht {
-            color: #446;
-            font-weight: bold;
-          }
+          text-decoration: none;
+          // &.syntax--irrlicht {
+          //   color: #446;
+          //   font-weight: bold;
+          // }
         }
       }
       .syntax--preprocessor {
         color: darkorchid;
         .syntax--keyword { color: inherit; }
       }
+      .syntax--punctuation {
+        &.syntax--definition.syntax--parameters { color: @custom-new-punctuation-color; }
+        &.syntax--separator {
+          &.syntax--dot-access, &.syntax--pointer-access, &.syntax--namespace.syntax--access {
+            color: @custom-new-punctuation-color;
+          }
+        }
+      }
+      .syntax--keyword.syntax--operator { color: @custom-new-punctuation-color; }
     }
     .syntax--ruby {
       .syntax--punctuation.syntax--definition.syntax--constant {
